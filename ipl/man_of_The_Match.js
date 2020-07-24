@@ -17,9 +17,9 @@ function man_of_The_Match(matches) {
   for (var year in results) {
     var array = Object.entries(results[year]);
     array.sort(function (a, b) {
-      return a[1] > b[1];
-    });  
-   answer[year] = array[0][0];
+      return b[1] - a[1];
+    });
+    answer[year] = array[0][0];
   }
   return (answer);
 }
