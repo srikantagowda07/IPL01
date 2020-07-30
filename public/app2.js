@@ -101,3 +101,45 @@ function visualstrike_Rate(strike_Rate, man_of_The_Match) {
       series: seriesData
   });
   }
+
+
+  
+function visualizedismissed(dismissed) {
+    const seriesData = [];
+    for (let key in dismissed) {
+      if (key == "PP Ojha") {
+        for (let players in dismissed[key]) {
+          seriesData.push([players, dismissed[key][players]]);
+        }
+      }
+    }
+  
+    Highcharts.chart("dismissed", {
+      chart: {
+        type: "column"
+      },
+      title: {
+        text: "dismissed player PP Ojha"
+      },
+      subtitle: {
+        text:
+          'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+      },
+      xAxis: {
+        type: "category"
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: "dismissed"
+        }
+      },
+      series: [
+        {
+          name: "PP Ojha",
+          data: seriesData
+        }
+      ]
+    });
+  }
+  
