@@ -143,3 +143,39 @@ function visualizedismissed(dismissed) {
     });
   }
   
+
+
+  function visualman_of_The_Match(man_of_The_Match) {
+    const seriesData = [];
+    for (let key in man_of_The_Match) {
+      seriesData.push([ man_of_The_Match[key] , (key * 1)]);
+    }
+  
+    Highcharts.chart("manofTHE_Match", {
+      chart: {
+        type: "column"
+      },
+      title: {
+        text: "THE players who r man_of_The_Match"
+      },
+      subtitle: {
+        text:
+          'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+      },
+      xAxis: {
+        type: "category"
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: "man"
+        }
+      },
+      series: [
+        {
+          name: "Years",
+          data: seriesData
+        }
+      ]
+    });
+  }
