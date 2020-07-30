@@ -14,3 +14,38 @@ function fetchAndVisualizeData2() {
     return;
   }
   
+  
+function visualizeToss_MatchWinners(Toss_MatchWinners) {
+    const seriesData = [];
+    for (let key in Toss_MatchWinners) {
+      seriesData.push([key, Toss_MatchWinners[key]]);
+    }
+  
+    Highcharts.chart("Toss_MatchWinners", {
+      chart: {
+        type: "column"
+      },
+      title: {
+        text: "Toss Match Winners"
+      },
+      subtitle: {
+        text:
+          'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+      },
+      xAxis: {
+        type: "category"
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: "Matches"
+        }
+      },
+      series: [
+        {
+          name: "Years",
+          data: seriesData
+        }
+      ]
+    });
+  }
