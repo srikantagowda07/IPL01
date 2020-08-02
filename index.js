@@ -88,25 +88,19 @@ function main() {
           let tossresult = toss(matches);
           finalResult3['toss'] = tossresult;
 
-          const jsonString3 = JSON.stringify(finalResult3);
-
-          const jsonString2 = JSON.stringify(finalResult2);
-
-          const jsonString = JSON.stringify(finalResult);
-
-          fs.writeFile(JSON_OUTPUT_FILE_PATH3, jsonString3, "utf8", err => {
+          fs.writeFile(JSON_OUTPUT_FILE_PATH3, JSON.stringify(finalResult3), "utf8", err => {
             if (err) {
               console.error(err)
             }
           });
 
-          fs.writeFile(JSON_OUTPUT_FILE_PATH2, jsonString2, "utf8", err => {
+          fs.writeFile(JSON_OUTPUT_FILE_PATH2, JSON.stringify(finalResult2), "utf8", err => {
             if (err) {
               console.error(err)
             }
           });
 
-          fs.writeFile(JSON_OUTPUT_FILE_PATH, jsonString, "utf8", err => {
+          fs.writeFile(JSON_OUTPUT_FILE_PATH, JSON.stringify(finalResult), "utf8", err => {
             if (err) {
               console.error(err)
             }
