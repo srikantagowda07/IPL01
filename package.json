@@ -2,9 +2,10 @@
   "name": "ipl_project",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "ipl": "node index.js",
+    "ipl": "NODE_ENV=development && node index.js",
     "start": "http-server"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
   "dependencies": {
     "csvtojson": "^2.0.10",
     "es2020": "^1.1.9",
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "dotenv": "^8.1.0"
   }
 }
