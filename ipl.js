@@ -1,6 +1,6 @@
 const fs = require("fs");
 const final = {};
-const JSON_OUTPUT_FILE_PATH = "./public/data.json";
+const JSON_OUTPUT_FILE_PATH = "./public/datasql.json";
 
 function todo(connection, sql, name_Variable) {
 
