@@ -1,1 +1,233 @@
-{"toss_winner":[{"toss_winner":"Royal Challengers Bangalore","Count(*)":81},{"toss_winner":"Rising Pune Supergiant","Count(*)":6},{"toss_winner":"Kolkata Knight Riders","Count(*)":92},{"toss_winner":"Kings XI Punjab","Count(*)":81},{"toss_winner":"Sunrisers Hyderabad","Count(*)":46},{"toss_winner":"Mumbai Indians","Count(*)":98},{"toss_winner":"Gujarat Lions","Count(*)":15},{"toss_winner":"Delhi Daredevils","Count(*)":80},{"toss_winner":"Chennai Super Kings","Count(*)":89},{"toss_winner":"Rajasthan Royals","Count(*)":80},{"toss_winner":"Deccan Chargers","Count(*)":43},{"toss_winner":"Kochi Tuskers Kerala","Count(*)":8},{"toss_winner":"Pune Warriors","Count(*)":20},{"toss_winner":"Rising Pune Supergiants","Count(*)":7},{"toss_winner":"Delhi Capitals","Count(*)":10}],"Man_of_the_match":[{"player_of_match":"SE Marsh","season":2008,"times":5},{"player_of_match":"YK Pathan","season":2009,"times":3},{"player_of_match":"SR Tendulkar","season":2010,"times":4},{"player_of_match":"CH Gayle","season":2011,"times":6},{"player_of_match":"CH Gayle","season":2012,"times":5},{"player_of_match":"MEK Hussey","season":2013,"times":5},{"player_of_match":"GJ Maxwell","season":2014,"times":4},{"player_of_match":"DA Warner","season":2015,"times":4},{"player_of_match":"V Kohli","season":2016,"times":5},{"player_of_match":"BA Stokes","season":2017,"times":3},{"player_of_match":"NM Coulter-Nile","season":2017,"times":3},{"player_of_match":"Rashid Khan","season":2018,"times":4},{"player_of_match":"AD Russell","season":2019,"times":4}],"Strike_Rate":[{"season":2017,"Strike_Rate":119.8444},{"season":2008,"Strike_Rate":98.2143},{"season":2009,"Strike_Rate":109.3333},{"season":2010,"Strike_Rate":142.1296},{"season":2011,"Strike_Rate":117.759},{"season":2012,"Strike_Rate":109.3093},{"season":2013,"Strike_Rate":135.6688},{"season":2014,"Strike_Rate":119.2691},{"season":2015,"Strike_Rate":127.8481},{"season":2016,"Strike_Rate":148.5496},{"season":2018,"Strike_Rate":140},{"season":2019,"Strike_Rate":142.1687}],"dissmissed":[{"bowler":"M Kartik","COunt(*)":1},{"bowler":"A Mishra","COunt(*)":1},{"bowler":"A Nehra","COunt(*)":1},{"bowler":"SK Raina","COunt(*)":2},{"bowler":"R Bhatia","COunt(*)":1},{"bowler":"SL Malinga","COunt(*)":1},{"bowler":"A Kumble","COunt(*)":1},{"bowler":"AB Agarkar","COunt(*)":1},{"bowler":"WD Parnell","COunt(*)":1},{"bowler":"MM Sharma","COunt(*)":1},{"bowler":"Imran Tahir","COunt(*)":1}],"Super_Over":[{"bowler":"JJ Bumrah","economy":4.5}]}
+{
+    "toss_winner": [
+        {
+            "toss_winner": "Royal Challengers Bangalore",
+            "Count(*)": 81
+        },
+        {
+            "toss_winner": "Rising Pune Supergiant",
+            "Count(*)": 6
+        },
+        {
+            "toss_winner": "Kolkata Knight Riders",
+            "Count(*)": 92
+        },
+        {
+            "toss_winner": "Kings XI Punjab",
+            "Count(*)": 81
+        },
+        {
+            "toss_winner": "Sunrisers Hyderabad",
+            "Count(*)": 46
+        },
+        {
+            "toss_winner": "Mumbai Indians",
+            "Count(*)": 98
+        },
+        {
+            "toss_winner": "Gujarat Lions",
+            "Count(*)": 15
+        },
+        {
+            "toss_winner": "Delhi Daredevils",
+            "Count(*)": 80
+        },
+        {
+            "toss_winner": "Chennai Super Kings",
+            "Count(*)": 89
+        },
+        {
+            "toss_winner": "Rajasthan Royals",
+            "Count(*)": 80
+        },
+        {
+            "toss_winner": "Deccan Chargers",
+            "Count(*)": 43
+        },
+        {
+            "toss_winner": "Kochi Tuskers Kerala",
+            "Count(*)": 8
+        },
+        {
+            "toss_winner": "Pune Warriors",
+            "Count(*)": 20
+        },
+        {
+            "toss_winner": "Rising Pune Supergiants",
+            "Count(*)": 7
+        },
+        {
+            "toss_winner": "Delhi Capitals",
+            "Count(*)": 10
+        }
+    ],
+    "Man_of_the_match": [
+        {
+            "player_of_match": "SE Marsh",
+            "season": 2008,
+            "times": 5
+        },
+        {
+            "player_of_match": "YK Pathan",
+            "season": 2009,
+            "times": 3
+        },
+        {
+            "player_of_match": "SR Tendulkar",
+            "season": 2010,
+            "times": 4
+        },
+        {
+            "player_of_match": "CH Gayle",
+            "season": 2011,
+            "times": 6
+        },
+        {
+            "player_of_match": "CH Gayle",
+            "season": 2012,
+            "times": 5
+        },
+        {
+            "player_of_match": "MEK Hussey",
+            "season": 2013,
+            "times": 5
+        },
+        {
+            "player_of_match": "GJ Maxwell",
+            "season": 2014,
+            "times": 4
+        },
+        {
+            "player_of_match": "DA Warner",
+            "season": 2015,
+            "times": 4
+        },
+        {
+            "player_of_match": "V Kohli",
+            "season": 2016,
+            "times": 5
+        },
+        {
+            "player_of_match": "BA Stokes",
+            "season": 2017,
+            "times": 3
+        },
+        {
+            "player_of_match": "NM Coulter-Nile",
+            "season": 2017,
+            "times": 3
+        },
+        {
+            "player_of_match": "Rashid Khan",
+            "season": 2018,
+            "times": 4
+        },
+        {
+            "player_of_match": "AD Russell",
+            "season": 2019,
+            "times": 4
+        }
+    ],
+    "Strike_Rate": [
+        {
+            "season": 2017,
+            "Strike_Rate": 119.8444
+        },
+        {
+            "season": 2008,
+            "Strike_Rate": 98.2143
+        },
+        {
+            "season": 2009,
+            "Strike_Rate": 109.3333
+        },
+        {
+            "season": 2010,
+            "Strike_Rate": 142.1296
+        },
+        {
+            "season": 2011,
+            "Strike_Rate": 117.759
+        },
+        {
+            "season": 2012,
+            "Strike_Rate": 109.3093
+        },
+        {
+            "season": 2013,
+            "Strike_Rate": 135.6688
+        },
+        {
+            "season": 2014,
+            "Strike_Rate": 119.2691
+        },
+        {
+            "season": 2015,
+            "Strike_Rate": 127.8481
+        },
+        {
+            "season": 2016,
+            "Strike_Rate": 148.5496
+        },
+        {
+            "season": 2018,
+            "Strike_Rate": 140
+        },
+        {
+            "season": 2019,
+            "Strike_Rate": 142.1687
+        }
+    ],
+    "dissmissed": [
+        {
+            "bowler": "M Kartik",
+            "COunt(*)": 1
+        },
+        {
+            "bowler": "A Mishra",
+            "COunt(*)": 1
+        },
+        {
+            "bowler": "A Nehra",
+            "COunt(*)": 1
+        },
+        {
+            "bowler": "SK Raina",
+            "COunt(*)": 2
+        },
+        {
+            "bowler": "R Bhatia",
+            "COunt(*)": 1
+        },
+        {
+            "bowler": "SL Malinga",
+            "COunt(*)": 1
+        },
+        {
+            "bowler": "A Kumble",
+            "COunt(*)": 1
+        },
+        {
+            "bowler": "AB Agarkar",
+            "COunt(*)": 1
+        },
+        {
+            "bowler": "WD Parnell",
+            "COunt(*)": 1
+        },
+        {
+            "bowler": "MM Sharma",
+            "COunt(*)": 1
+        },
+        {
+            "bowler": "Imran Tahir",
+            "COunt(*)": 1
+        }
+    ],
+    "Super_Over": [
+        {
+            "bowler": "JJ Bumrah",
+            "economy": 4.5
+        }
+    ]
+}
