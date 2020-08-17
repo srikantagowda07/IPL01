@@ -110,3 +110,30 @@ function main() {
 }
 
 main();
+
+var mysql = require('mysql');
+var sqlIPL = require("./ipl");
+require('./config.js');
+
+let connection = mysql.createConnection({
+  host: process.env.host,
+  user: process.env.user,
+  password: process.env.password,
+  database: process.env.database
+});
+
+
+connection.connect(function (err) {
+  if (err) throw err;
+  console.log("Connected Successfully!");
+});
+
+
+sqlIPL.myfunction(connection)
+
+
+connection.end(function (err) {
+  if (err) throw err;
+  console.log("Connection End!");
+});
+//                                             END
