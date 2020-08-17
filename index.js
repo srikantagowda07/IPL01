@@ -12,13 +12,22 @@ const man_of_The_Match = require("./ipl/man_of_The_Match");
 const strike_Rate = require("./ipl/strike_Rate");
 const best_Econ_Superover = require("./ipl/best_Econ_Superover");
 const dismissed = require("./ipl/dismissed");
+const toss = require("./ipl1-refactoring-js/toss");
+const dismissedplayer = require("./ipl1-refactoring-js/dismissedplayer");
+const manofthematch = require("./ipl1-refactoring-js/manofthematch");
+const strikeRATEofplayer = require("./ipl1-refactoring-js/strikeRATEofplayer");
+const SOver = require("./ipl1-refactoring-js/SOver");
 
 const MATCHES_FILE_PATH = "./csv_data/matches.csv";
 const DELIVERIES_FILE_PATH = "./csv_data/deliveries.csv";
-const JSON_OUTPUT_FILE_PATH = "./public/data.json";
+const JSON_OUTPUT_FILE_PATH = "./public/data1.json";
 const JSON_OUTPUT_FILE_PATH2 = "./public/data2.json";
+const JSON_OUTPUT_FILE_PATH3 = "./public/data3.json";
+
 var finalResult = {};
 var finalResult2 = {};
+var finalResult3 = {};
+
 function main() {
   csv()
     .fromFile(MATCHES_FILE_PATH)
@@ -62,18 +71,36 @@ function main() {
 
           let resultsdismissed = dismissed(deliveries);
           finalResult2['dismissed'] = resultsdismissed;
-          console.log(resultstrike_Rate);
 
-          const jsonString2 = JSON.stringify(finalResult2);
+          let resultdismissedplayer = dismissedplayer(deliveries);
+          finalResult3['dismissedplayer'] = resultdismissedplayer;
 
-          const jsonString = JSON.stringify(finalResult);
+          let resultmanofthematch = manofthematch(matches);
+          finalResult3['manofthematch'] = resultmanofthematch;
 
-          fs.writeFile(JSON_OUTPUT_FILE_PATH2, jsonString2, "utf8", err => {
+
+          let resultstrikeRATEofplayer = strikeRATEofplayer(deliveries, matches);
+          finalResult3['strikeRATEofplayer'] = resultstrikeRATEofplayer;
+
+          let resultSOver = SOver(deliveries);
+          finalResult3['SOver'] = resultSOver;
+
+          let tossresult = toss(matches);
+          finalResult3['toss'] = tossresult;
+
+          fs.writeFile(JSON_OUTPUT_FILE_PATH3, JSON.stringify(finalResult3), "utf8", err => {
             if (err) {
               console.error(err)
             }
           });
-          fs.writeFile(JSON_OUTPUT_FILE_PATH, jsonString, "utf8", err => {
+
+          fs.writeFile(JSON_OUTPUT_FILE_PATH2, JSON.stringify(finalResult2), "utf8", err => {
+            if (err) {
+              console.error(err)
+            }
+          });
+
+          fs.writeFile(JSON_OUTPUT_FILE_PATH, JSON.stringify(finalResult), "utf8", err => {
             if (err) {
               console.error(err)
             }
@@ -81,4 +108,5 @@ function main() {
         })
     })
 }
+
 main();

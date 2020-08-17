@@ -3,6 +3,7 @@ function strike_Rate(deliveries, matches) {
     var matchCSV = matches;
     var Balls = {};
     var answer = {};
+   
     for (let del of deliveries) {
         const player_Name = del.batsman;
         const Runs_scored = del.total_runs;
@@ -16,6 +17,7 @@ function strike_Rate(deliveries, matches) {
                 }
             }
         }
+
         if (results[season]) {
             if (results[season][player_Name]) {
                 results[season][player_Name] += (Runs_scored * 1);
@@ -34,7 +36,7 @@ function strike_Rate(deliveries, matches) {
         } else {
             Balls[season] = {}
         }
-    }
+    } 
     for (year in results) {
         answer[year] = {}
         for (key in results[year]) {
